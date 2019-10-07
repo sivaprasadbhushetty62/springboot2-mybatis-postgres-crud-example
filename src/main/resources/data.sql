@@ -1,0 +1,3 @@
+insert into videos(id, title , url, description) values(1,'MEAN Stack tutorial 10','https://www.youtube.com/watch?v=_uWsdntbGOA&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9&index=10','MEAN tutorial 10');
+insert into videos(id, title , url, description) values(2,'MEAN Stack tutorial 11','https://www.youtube.com/watch?v=_uWsdntbGOA&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9&index=11','MEAN tutorial 11');
+insert into videos(id, title , url, description) values(3,'MEAN Stack tutorial 12','https://www.youtube.com/watch?v=_uWsdntbGOA&list=PLC3y8-rFHvwj200LLotCYum_9wmGeTJx9&index=12','MEAN tutorial 12');
