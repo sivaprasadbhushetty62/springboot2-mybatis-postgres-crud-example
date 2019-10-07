@@ -51,7 +51,7 @@ public class Video {
 
   @Override
   public String toString() {
-    return "Employee [id=" + this.id + ", title=" + this.title + ", url=" + this.url + ", description=" + this.description
+    return "Video [id=" + this.id + ", title=" + this.title + ", url=" + this.url + ", description=" + this.description
     + "]";
   }
 

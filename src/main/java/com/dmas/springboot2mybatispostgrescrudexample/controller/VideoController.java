@@ -31,7 +31,7 @@ public class VideoController {
   }
 
   @GetMapping("/videos/{id}")
-  public ResponseEntity<Video> getEmployeeById(@PathVariable(value = "id") Long videoId)
+  public ResponseEntity<Video> getVideoById(@PathVariable(value = "id") Long videoId)
       throws ResourceNotFoundException {
     Video video = videoRepository.findById(videoId)
         .orElseThrow(() -> new ResourceNotFoundException("Video not found for this id :: " + videoId));
@@ -39,7 +39,7 @@ public class VideoController {
   }
 
   @PostMapping("/video")
-  public Video createEmployee(@Valid @RequestBody Video video) throws ResourceNotFoundException{
+  public Video createVideo(@Valid @RequestBody Video video) throws ResourceNotFoundException{
     videoRepository.insert(video);
     Long id = video.getId();
         Video insertVideo = videoRepository.findById(id)
@@ -48,7 +48,7 @@ public class VideoController {
   }
 
   @PutMapping("/video/{id}")
-  public ResponseEntity<Video> updateEmployee(@PathVariable(value = "id") Long videoId,
+  public ResponseEntity<Video> updateVideo(@PathVariable(value = "id") Long videoId,
       @Valid @RequestBody Video videoDetails) throws ResourceNotFoundException {
     Video video = videoRepository.findById(videoId)
         .orElseThrow(() -> new ResourceNotFoundException("Video not found for this id :: " + videoId));
